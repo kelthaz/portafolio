@@ -40,18 +40,24 @@
 
 .projects {
     background-color: white;
-    height: 650px;
+    height: 265px;
     color: #4831D3;
     text-align: left;
     width: 100%;
-    
 }
 
 .projects-item {
-    border-right: solid;
-    border-left-color: #32a1ce;
-    height: 450px;
-    
+    border-right: solid ;
+    border-right-color: #4831D3;
+    height: 250px;
+}
+
+.message {
+    background-color: #e7e9eb;
+    height: 650px;
+    color: #4831D3;
+    text-align: center;
+    width: 100%;
 }
 
 .title {
@@ -84,6 +90,31 @@
     width: 85px;
 }
 
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button3 {
+    background-color: white; 
+    color: #8cbae8; 
+    border: 1px solid #8cbae8;
+    border-radius: 8px;
+  }
+  
+  .button3:hover {
+    background-color: #8cbae8;
+    color: white;
+  }
 
 @media (max-width: 600px) {
     .rigth {
@@ -113,6 +144,10 @@
     
     .python {
        display: none;
+    }
+
+    .projects {
+        height: 650px;
     }
 
     /* .container-backend {

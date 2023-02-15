@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import './Portafolio.css'
 import portafolioimg from './26432.svg'
@@ -10,6 +11,7 @@ import vue from './vue.png'
 import react from './react.png'
 import node from './node.png'
 import python from './python.jpg'
+import TextField from '@mui/material/TextField';
 
 const Portafolio = () => {
 
@@ -34,7 +36,6 @@ const Portafolio = () => {
                         <img src={user}  alt='user' />
                     </div>
                     <Grid spacing={2} container xs={12} md={6} pl={12} pt={4}>
-                        {/* <img src={portafolioimg} className="App-logo" alt='logo' /> */}
                         <Grid item xs={12} md={6} pl={12} pt={4}>
 
                             Altamente capacitado en mejora progresiva, sistemas de diseño e ingenieria de interfaz de usuario
@@ -105,24 +106,69 @@ const Portafolio = () => {
                 </Grid>
 
                 <Grid className='projects' container spacing={2} >
-                    <Grid  className='projects-item' item xs={12} md={5}  ml={12}>
-                        <h1 >Yo construyo y diseño cosas </h1>
+                    <Grid  className='projects-item' item pb={8} xs={12} md={5}  ml={12}>
+                        <Grid item>
+                            <h1 >Yo construyo y diseño cosas </h1>
 
-                        <div>
-                            Proyectos de codigo abiento, aplicaciones web y experimentales
-                        </div>
-                    </Grid>
-                    <Grid item xs={12} md={6} >
-                        <h1 >Yo construyo y diseño cosas </h1>
-
-                        <div>
-                            Proyectos de codigo abiento, aplicaciones web y experimentales
-                        </div>
+                            <div>
+                                Proyectos de codigo abiento, aplicaciones web y experimentales
+                            </div>
+                        </Grid >
+                        <Grid mt={6} item>
+                            <a className="button button3" href='https://farmadomicilios.epssura.com/login' target="_blank">Ver mis trabajos</a>
+                        </Grid>
+                    </Grid >
+                    <Grid  item ml={12} xs={8} md={4} >
+                        <Grid>
+                            <h1 >Monto bicicleta a veces  </h1>
+                            <div>
+                                Practico con algunos cursos que voy encontrando en la web
+                            </div>
+                        </Grid>
+                        <Grid mt={6}>
+                            <Link href="www.enyoi.co/full-stack-developer/">
+                                <Button variant="outlined">
+                                    Ver cursos
+                                </Button>
+                            </Link>
+                        </Grid>
                     </Grid>
                 </Grid>
+                <Grid className='message' container spacing={2} >
+                    <Grid  item  xs={12} md={12} >
+                        <Grid item md={12}>
+                            <h1 > Envieme un mensaje !</h1>
 
+                            <div>
+                                ¿Tinenes una pregunta o propuesta, o solo quieres salidar? Adelante
+                            </div>
+                        </Grid >
+                        <Grid container  md={12}>
+                            <Grid mt={4} md={4} item>
+                                <TextField
+                                    id="outlined-error"
+                                    label="Su nombre"
+                                />
+                            </Grid>
+                            <Grid mt={4} md={4} item>
+                                <TextField
+                                    id="outlined-error-helper-text"
+                                    label="Direccion de correo electronico"
+                                />
+                            </Grid>
+                            <Grid mt={4} md={4} item>
+                                <TextField
+                                    id="outlined-error"
+                                    label="Tu mensaje"
+                                />
+                            </Grid>
+                        </Grid>
+                        <Grid mt={6} item>
+                            <a className="button button3" href='https://farmadomicilios.epssura.com/login' target="_blank">Enviar mensaje</a>
+                        </Grid>
+                    </Grid>
+                </Grid>
             </Grid>
-
         </Box>
     )
 }
