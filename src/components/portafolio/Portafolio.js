@@ -1,17 +1,25 @@
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import './Portafolio.css'
-import portafolioimg from './26432.svg'
-import user from './user.png'
-import punto from './punto.png'
-import linea from './linea.png'
-import vue from './vue.png'
-import react from './react.png'
-import node from './node.png'
-import python from './python.jpg'
+import portafolioimg from './assets/26432.svg'
+import user from './assets/user.png'
+import punto from './assets/punto.png'
+import linea from './assets/linea.png'
+import vue from './assets/vue.png'
+import react from './assets/react.png'
+import node from './assets/node.png'
+import python from './assets/python.jpg'
 import TextField from '@mui/material/TextField';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { Button, CardActionArea, CardActions } from '@mui/material';
 
 const Portafolio = () => {
 
@@ -115,7 +123,7 @@ const Portafolio = () => {
                             </div>
                         </Grid >
                         <Grid mt={6} item>
-                            <a className="button button3" href='https://farmadomicilios.epssura.com/login' target="_blank">Ver mis trabajos</a>
+                            <a className="button button3" href='https://farmadomicilios.epssura.com/login' target="_blank" rel="noreferrer">Ver mis trabajos</a>
                         </Grid>
                     </Grid >
                     <Grid  item ml={12} xs={8} md={4} >
@@ -144,7 +152,7 @@ const Portafolio = () => {
                             </div>
                         </Grid >
                         <Grid container  md={12}>
-                            <Grid mt={4} md={4} item>
+                            <Grid mt={4} xs={6} md={4} item>
                                 <TextField
                                     id="outlined-error"
                                     label="Su nombre"
@@ -164,8 +172,72 @@ const Portafolio = () => {
                             </Grid>
                         </Grid>
                         <Grid mt={6} item>
-                            <a className="button button3" href='https://farmadomicilios.epssura.com/login' target="_blank">Enviar mensaje</a>
+                            <a className="button button3" href='https://farmadomicilios.epssura.com/login' target="_blank" rel="noreferrer">Enviar mensaje</a>
                         </Grid>
+                    </Grid>
+                </Grid>
+                <Grid className='contact' container spacing={2} >
+                    <Grid  item  xs={12} md={12} >
+                        <Grid item md={12}>
+                            <h1 > Contacto</h1>
+
+                            <div>
+                                Algunos metodos de contacto
+                            </div>
+                        </Grid >
+                        <Grid mt={6} item>
+                            <Grid>
+                                <Button color="primary" aria-label="upload picture" component="label">
+                                    <a className='icons' href='https://www.linkedin.com/' target="_blank" rel="noreferrer">
+                                        <LinkedInIcon />
+                                    </a>
+                                </Button>
+                                <Button color="primary" aria-label="upload picture" component="label">
+                                    <a className='icons' href='https://www.facebook.com/' target="_blank" rel="noreferrer">
+                                        <FacebookIcon />
+                                    </a>
+                                </Button>
+                                <Button color="primary" aria-label="upload picture" component="label" >
+                                    <a className='icons' href='https://www.youtube.com/' target="_blank" rel="noreferrer">
+                                        <YouTubeIcon />
+                                    </a>
+                                </Button>
+                                <Button color="primary" aria-label="upload picture" component="label" >
+                                    <a className='icons' href='https://www.twitter.com/' target="_blank" rel="noreferrer">
+                                        <TwitterIcon />
+                                    </a>
+                                </Button>
+                            </Grid>
+                        </Grid>
+                        <Grid container  md={8}>
+                            <Grid item  md={7} />
+                            <Grid item  md={4} >
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                        component="img"
+                                        height="140"
+                                        image={user}
+                                        alt="green iguana"
+                                        />
+                                        <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            David Prado
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary">
+                                            Aqui puedes encontrar mi HV
+                                        </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                    <CardActions>
+                                        <Button size="small" color="primary">
+                                            Descargar HV
+                                        </Button>
+                                    </CardActions>
+                                </Card>
+                            </Grid>
+                        </Grid>
+                        
                     </Grid>
                 </Grid>
             </Grid>

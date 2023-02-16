@@ -54,8 +54,16 @@
 
 .message {
     background-color: #e7e9eb;
-    height: 650px;
+    height: 400px;
     color: #4831D3;
+    text-align: center;
+    width: 100%;
+}
+
+.contact {
+    background-color: #4831D3;
+    height: 650px;
+    color: #e7e9eb;
     text-align: center;
     width: 100%;
 }
@@ -116,6 +124,10 @@
     color: white;
   }
 
+  .icons {
+    color: white;
+  }
+
 @media (max-width: 600px) {
     .rigth {
       display: none;
@@ -147,6 +159,10 @@
     }
 
     .projects {
+        height: 650px;
+    }
+
+    .message {
         height: 650px;
     }
 
